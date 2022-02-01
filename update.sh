@@ -1,5 +1,5 @@
 #!/bin/bash
-start_cmd="python3 bot/main.py updated"
+start_cmd="python3 bot/main.py updated $1"
 repo_branch="origin/master"
 
 echo "Updating..."

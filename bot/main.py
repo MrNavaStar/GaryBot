@@ -14,7 +14,7 @@ async def on_ready():
 @bot.command()
 async def update(ctx):
     await ctx.send("Updating!")
-    subprocess.call(["sh", "./update.sh"])
+    subprocess.call(["sh", "./update.sh", ctx.channel.id])
     quit(0)
 
 
